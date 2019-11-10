@@ -51,9 +51,11 @@ function clickMe() {
     }, 2000);
 }
 
-if (distance < 0) {
-    setTimeout(function () {
+
+setTimeout(function () {
+    if (distance > 0) {
         clickMe();
-    }, 500);
-}
+    }
+}, 2000);
+
 
