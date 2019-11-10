@@ -51,5 +51,9 @@ function clickMe() {
     }, 2000);
 }
 
-clickMe();
+if (distance < 0) {
+    setTimeout(function () {
+        clickMe();
+    }, 500);
+}
 
